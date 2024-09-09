@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - Asset Monitoring Teknologi Indonesia</title>
+    <meta
+      name="description"
+      content="Sistem pemantauan aset berbasis teknologi untuk Indonesia"
+    />
+    <meta name="keywords" content="Asset Monitoring, Teknologi, Indonesia" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts and CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader" class="preloader">
+      <div class="preloader-inner">
+        <img src="assets/img/logo.png" alt="AMTI Logo" />
+      </div>
+    </div>
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="Logo" />
+          <span class="logo-text"
+            ><b>Asset Monitoring Teknologi Indonesia</b></span
+          >
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html"><strong>Home</strong></a>
+            </li>
+            <li class="dropdown">
+              <a href="products.html">
+                <strong>Products</strong>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/shms.html">Structure Health Monitoring System</a>
+                </li>
+                <li>
+                  <a href="/eews.html">Earthquake Early Warning System</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="services.html">
+                <strong>Services</strong>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="bridge-monitoring.html">Bridge Monitoring</a></li>
+                <li>
+                  <a href="building-monitoring.html">Building Monitoring</a>
+                </li>
+                <li>
+                  <a href="railway-monitoring.html">Railway Monitoring</a>
+                </li>
+                <li><a href="tunnel-monitoring.html">Tunnel Monitoring</a></li>
+                <li>
+                  <a href="jetty-port-monitoring.html"
+                    >Jetty and Port Monitoring</a
+                  >
+                </li>
+                <li><a href="dam-monitoring.html">Dam Monitoring</a></li>
+                <li>
+                  <a href="landslide-monitoring.html">Landslide Monitoring</a>
+                </li>
+                <li>
+                  <a href="earthquake-early-warning.html"
+                    >Earthquake Early Warning System</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="tools.html"><strong>Tools</strong></a>
+            </li>
+            <li>
+              <a href="about.html"><strong>About</strong></a>
+            </li>
+            <li>
+              <a href="articles.html"><strong>Articles</strong></a>
+            </li>
+            <li>
+              <a href="contact.html" class="active"><strong>Contact</strong></a>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 style="color: #2d4e6f">Contact</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <!-- Form Section -->
+            <div class="col-lg-6 mx-auto">
+              <div class="section-title text-center mb-4"></div>
+              <form
+                action="contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">First Name <span class="text-danger">*</span></label>
+                    <input
+                      type="text" id="name" name="name" class="form-control" placeholder="First Name" required/>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      id="last_name"
+                      name="last_name"
+                      class="form-control"
+                      placeholder="Last Name"
+                      required/>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message (min. 20 characters)"
+                      minlength="20"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="logo-text">
+                      Send message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          
+            <!-- Google Maps Section -->
+            <div class="col-lg-6">
+              <div class="section-title text-center mb-4"></div>
+              <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15706.63187463856!2d106.6311208!3d-6.2441982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c424eb2db4f3%3A0x5d72e2e458b037a6!2sJl.%20Imam%20Bonjol%20Blok%20A2%20No.30%2C%20Karawaci%2C%20Kota%20Tangerang%2C%20Banten%2015115!5e0!3m2!1sen!2sid!4v1593776346264!5m2!1sen!2sid"
+                  frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+              </div>
+            </div>
+          </div>          
+          </div>
+      </section>
+    </main>
+
+    <hr/>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- Footer About -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="about.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="Logo" />
+              <span class="sitename" style="color: #2d4e6f">AMTI</span>
+            </a>
+            <p class="footer-tagline">PROTECT THE WORLD WE BUILD</p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-4 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Contact -->
+          <div class="col-lg-4 col-md-3 footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="bi bi-geo-alt"></i> Victoria Office Park</p>
+            <p>Jl. Imam Bonjol Blok A2 No.30</p>
+            <p>Karawaci, Kota Tangerang 15115</p>
+            <p class="mt-3">
+              <i class="bi bi-telephone"></i>
+              <span>+62 21 55728708 / 55728218</span>
+            </p>
+            <p><i class="bi bi-envelope"></i> <span>amti@example.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename" style="color: #2d4e6f">2024</strong>
+          <span></span>
+        </p>
+        <div class="credits">
+          Powered by PT. ASSET MONITORING TEKNOLOGI INDONESIA
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>
