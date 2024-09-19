@@ -16,17 +16,16 @@ $mail = new PHPMailer(true);
 try {
     // Konfigurasi SMTP
     $mail->isSMTP();
-    $mail->Host       = 'smtp.yourdomain.com'; // Ganti dengan SMTP server yang sesuai
+    $mail->Host       = 'smtp.yourdomain.com'; 
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'your-email@yourdomain.com'; // Ganti dengan email kamu
-    $mail->Password   = 'your-email-password'; // Ganti dengan password email kamu
+    $mail->Username   = 'your-email@yourdomain.com'; 
+    $mail->Password   = 'your-email-password'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // Pengaturan Email
     $mail->setFrom('your-email@yourdomain.com', 'Your Name');
-    $mail->addAddress('naomimanurung40@gmail.com'); // Email tujuan
-
+    $mail->addAddress(''); 
     // Konten Email
     $mail->isHTML(true);
     $mail->Subject = 'Contact Form Submission';
