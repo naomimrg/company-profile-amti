@@ -1016,43 +1016,40 @@ Call to Action Section
 /* -------------------------------
 # Why us
 ---------------------------------- */
-
-/* Card Styles */
 .card-item {
-  background: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  height: 100%; /* Mengatur agar card memiliki tinggi yang konsisten */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Untuk menyeimbangkan posisi konten */
-}
-
-.card-item img {
-  width: 80px; /* Perbesar ukuran ikon */
-  margin-bottom: 20px;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .card-item:hover {
   transform: translateY(-10px);
 }
 
+.card-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
 .card-item h4 {
   font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #1d3f6e;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .card-item p {
   font-size: 14px;
-  color: #4a4a4a;
+  color: #666;
+  margin-top: auto;
 }
 
-/* Flexbox untuk menyamakan tinggi */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1062,6 +1059,18 @@ Call to Action Section
 .col-lg-3 {
   flex: 1 1 24%;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .col-lg-3 {
+    flex: 1 1 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-lg-3 {
+    flex: 1 1 100%;
+  }
 }
 
 /*--------------------------------------------------------------
