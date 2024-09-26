@@ -964,52 +964,54 @@ Call to Action Section
   z-index: -1;
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
+/* Services Section */
 .services .service-item {
-  background-color: var(--surface-color);
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 60px 30px 60px 70px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 18px;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.services .service-item .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
+.services .service-item:hover {
+  transform: translateY(-10px);
 }
 
-.services .service-item .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
+.services .service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #007bff;
 }
 
 .services .service-item h3 {
-  font-weight: 700;
-  margin: 10px 0 15px 0;
   font-size: 22px;
-  transition: ease-in-out 0.3s;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .services .service-item p {
-  line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  color: #555;
 }
 
-@media (min-width: 1365px) {
-  .services .service-item:hover {
-    transform: translateY(-10px);
-  }
+.services .view-service-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+}
 
-  .services .service-item:hover h3 {
-    color: var(--accent-color);
+.services .view-service-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .services .service-item {
+    margin-bottom: 30px;
   }
 }
 
@@ -1298,6 +1300,67 @@ FAQ
   box-shadow: none;
   outline: none;
   border-color: transparent;
+}
+
+/* ==============================
+Subscribe
+================================= */
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#subscribe-section, #upper-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#subscribe-section .container {
+  background-color: #0066cc;
+  padding: 40px;
+  border-radius: 25px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+#subscribe-section h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#subscribe-section p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  margin-right: 10px;
+}
+
+.newsletter-form button {
+  background-color: #ffaa00;
+  border: none;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 16px;
 }
 
 /* ============================
