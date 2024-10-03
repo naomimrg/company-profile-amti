@@ -1018,10 +1018,10 @@ Services
   }
 }
 
-/* -------------------------------
-# Why us
----------------------------------- */
-.card-item {
+/* =======================================
+Why us
+==================================== */
+.why-us-box {
   background-color: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -1031,25 +1031,26 @@ Services
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  text-align: center;
 }
 
-.card-item:hover {
+.why-us-box:hover {
   transform: translateY(-10px);
 }
 
-.card-item img {
+.why-us-box img {
   width: 50px;
   height: 50px;
   margin-bottom: 15px;
 }
 
-.card-item h4 {
+.why-us-box h4 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.card-item p {
+.why-us-box p {
   font-size: 14px;
   color: #666;
   margin-top: auto;
@@ -1057,18 +1058,26 @@ Services
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
   justify-content: space-between;
 }
 
 .col-lg-3 {
-  flex: 1 1 24%;
-  margin-bottom: 20px;
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.col-lg-3:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
   .col-lg-3 {
     flex: 1 1 48%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1569,7 +1578,6 @@ EEWS
   width: 100%; 
   height: 100vh; 
   object-fit: cover; 
-  /* border-radius: 0; */
   margin-bottom: 2rem; 
 }
 
@@ -1600,6 +1608,33 @@ img {
   width: 100%;
   height: 100vh;
   object-fit: cover; 
+}
+
+.eews-image-section {
+  padding: 20px 0;
+}
+
+.text-outside-image h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-outside-image p {
+  font-size: 1.5rem;
+  color: #007bff; 
+}
+
+.text-outside-image .lead {
+  font-size: 1.1rem;
+  color: #333; 
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.ui-image img {
+  width: 100%;
+  height: auto;
 }
 
 /* ==============
@@ -1886,16 +1921,6 @@ article1
   padding-bottom: 10px;
 }
 
-/* .section-title:after {
-  content: '';
-  width: 50px;
-  height: 3px;
-  background: #2d4e6f;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 2px;
-} */
-
 blockquote {
   font-size: 1.5rem;
   font-style: italic;
@@ -2048,7 +2073,6 @@ footer
   color: color-mix(in srgb, var(--black-color), transparent 30%);
 }
 
-/* General paragraph and list styles in footer */
 .footer p {
   line-height: 1.7;
   color: #666666;
@@ -2065,7 +2089,6 @@ footer
   color: #333333;
 }
 
-/* Sitename style in footer */
 .footer .sitename {
   color: #2d4e6f;
 }
@@ -2096,7 +2119,6 @@ footer
   }
 }
 
-/* .copyright */
 .container {
   padding: 20px 0;
 }
