@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Russo+One&display=swap"
     rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
@@ -34,28 +34,14 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Logo">
+        <img src="assets/img/logo_white.png" alt="Logo">
         <span class="logo-text"><b>Asset Monitoring Teknologi Indonesia</b></span>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html"><strong>Home</strong></a></li>
           <li><a href="eews.html" class="active"><strong>EEWS</strong></a></li>
-          <li class="dropdown">
-            <a href="shms.html">
-              <strong>SHMS</strong>
-              <i class="bi bi-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="bridge-monitoring.html">Bridge Monitoring</a></li>
-              <li><a href="building-monitoring.html">Building Monitoring</a></li>
-              <li><a href="railway-monitoring.html">Railway Monitoring</a></li>
-              <li><a href="tunnel-monitoring.html">Tunnel Monitoring</a></li>
-              <li><a href="port-monitoring.html">Port Monitoring</a></li>
-              <li><a href="dam-monitoring.html">Dam Monitoring</a></li>
-              <li><a href="landslide-monitoring.html">Landslide Monitoring</a></li>
-            </ul>
-          </li>
+          <li><a href="shms.html"><strong>SHMS</strong></a></li>
           <li><a href="about.html"><strong>About</strong></a></li>
           <li><a href="articles.html"><strong>Articles</strong></a></li>
           <li><a href="contact.html"><strong>Contact</strong></a></li>
@@ -67,7 +53,7 @@
 
   <!-- EEWS Section -->
   <section id="shms-section" class="shms-section section"
-    style="background: linear-gradient(180deg, #3A7CA5, #4DBDCC); padding: 40px 0;">
+    style="background: #1A1D30; padding: 40px 0;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 text-section" style="color: white !important; text-align: left;">
@@ -83,36 +69,14 @@
     </div>
   </section>
 
-  <section id="eews" class="light-background">
+  <section id="eews" class="eews-section light-background">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="ui-text">
-            <h2 class="display-6"><span class="highlight">System-level</span> Plant-wide Performance</h2>
-            <p class="mb-4">By identifying P-waves, the first waves to arrive in an earthquake, our system provides
-              crucial alerts seconds to minutes before the stronger S-waves hit. This early notification allows users to
-              take swift actions, such as moving to a safer location or halting critical operations, ultimately saving
-              lives and minimizing damage.</p>
-            <ul class="mb-4">
-              <li><strong>Real-time Detection:</strong> Sensors placed strategically to detect seismic activity
-                instantly.</li>
-              <li><strong>AI Integration:</strong> Rapid assessment of earthquake magnitude and its potential impact.
-              </li>
-              <li><strong>Instant Alerts:</strong> Sends notifications to your devices, offering precious seconds to
-                act.</li>
-              <li><strong>Safety First:</strong> Designed to protect individuals, businesses, and infrastructure.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="ui-image">
-            <img src="assets/img/dokumentasi/10.png" class="img-fluid equal-image"
-              alt="System-level Plant-wide Performance">
-          </div>
-        </div>
+      <div class="eews-title-wrapper">
+        <h2>SYSTEM LEVEL PLANT WIDE PERFORMANCE</h2>
+        <p>By identifying P-waves, the first waves to arrive in an earthquake, our system provides crucial alerts seconds to minutes before the stronger S-waves hit. This early notification allows users to take swift actions, such as moving to a safer location or halting critical operations, ultimately saving lives and minimizing damage.</p>
       </div>
     </div>
-  </section>
+  </section>  
 
   <section id="image-display" class="eews-image-section">
     <div class="container-fluid p-0">
@@ -120,8 +84,14 @@
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
             <h1 class="display-4">BUILDINGS</h1>
-            <p>
-              HOSPITAL | APARTMENT | EDUCATIONAL FACILITY | OFFICE | MALL | HOTEL</p>
+            <div class="icon-row">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+            <p>HOSPITAL | APARTMENT | EDUCATIONAL FACILITY | OFFICE | MALL | HOTEL</p>
             <p class="lead mt-3">
               Earthquakes can cause severe damage, including the collapse of buildings, often on a large scale, and can
               result in casualties. These sudden events trigger widespread panic and chaos. Building damage may also
@@ -137,21 +107,27 @@
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/public.png" class="img-fluid w-100" alt="public buildings">
+            <img src="assets/img/eews/buildings.png" class="img-fluid w-100" alt="public buildings">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <section id="image-display" class="eews-image-section">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
             <h1 class="display-4">TRANSPORTATION</h1>
-            <p>
-              AIRPORT | PORT | TRAIN | BUS</p>
+            <div class="icon-row">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+            <p>AIRPORT | PORT | TRAIN | BUS</p>
             <p class="lead mt-3">
               Earthquakes pose a serious threat to transportation systems such as airports, ports, railways, and
               vehicles, potentially disrupting operations and endangering passengers and operators. By providing early
@@ -162,21 +138,27 @@
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/transportation.png" class="img-fluid w-100" alt="public buildings">
+            <img src="assets/img/eews/transportation.png" class="img-fluid w-100" alt="transportation">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <section id="image-display" class="eews-image-section">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
             <h1 class="display-4">UTILITIES</h1>
-            <p>
-              POWER PLANT | ELECTRICITY DISTRIBUTION | WATER SUPPLY | GAS SUPPLY | WASTEWATER SYSTEM</p>
+            <div class="icon-row">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+            <p>POWER PLANT | ELECTRICITY DISTRIBUTION | WATER SUPPLY | GAS SUPPLY | WASTEWATER SYSTEM</p>
             <p class="lead mt-3">
               Earthquake vibrations can damage pipelines, valves, and pump stations, causing hazardous chemical and
               water leaks that could disrupt vital supplies of clean water or electricity to the community. The
@@ -187,21 +169,27 @@
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/utilities.png" class="img-fluid w-100" alt="public buildings">
+            <img src="assets/img/eews/utilities.png" class="img-fluid w-100" alt="utilities">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <section id="image-display" class="eews-image-section">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
             <h1 class="display-4">OIL, GAS, AND CHEMICALS</h1>
-            <p>
-              OIL & GAS FACILITIES | CHEMICAL PLANT | REFINERY</p>
+            <div class="icon-row">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+            <p>OIL & GAS FACILITIES | CHEMICAL PLANT | REFINERY</p>
             <p class="lead mt-3">
               Earthquakes can cause explosions, fires, chemical leaks, and environmental damage at oil and gas
               facilities. With AMTI's earthquake early warning, there is more time to trigger damage control actions,
@@ -212,21 +200,27 @@
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/oil.png" class="img-fluid w-100" alt="public buildings">
+            <img src="assets/img/eews/oil.png" class="img-fluid w-100" alt="oil, gas, and chemicals">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <section id="image-display" class="eews-image-section">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
             <h1 class="display-4">MINES</h1>
-            <p>
-              TRANSPORTATION INFRASTRUCTURE | MINING EQUIPMENT</p>
+            <div class="icon-row">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+            <p>TRANSPORTATION INFRASTRUCTURE | MINING EQUIPMENT</p>
             <p class="lead mt-3">
               Earthquakes can cause significant damage to infrastructure and jeopardize worker safety in mining
               operations. The Earthquake Early Warning System (EEWS) from AMTI can significantly reduce damage,
@@ -237,14 +231,13 @@
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/mines.png" class="img-fluid w-100" alt="public buildings">
+            <img src="assets/img/eews/mines.png" class="img-fluid w-100" alt="mines">
           </div>
         </div>
       </div>
     </div>
-  </section>
-  </main>
-
+  </section>  
+  
   <footer id="footer" class="footer">
     <div class="container footer-top">
       <div class="row gy-4 justify-content-between">
@@ -252,7 +245,7 @@
           <span class="sitename">AMTI</span>
           <p>Generally, seminars are geared more toward learning about a particular topic or related subtopics.</p>
         </div>
-
+  
         <div class="col-lg-7 d-flex justify-content-between">
           <div class="footer-contact">
             <h4>Contact Us.</h4>
@@ -260,7 +253,7 @@
             <p>Phone: 1-800-700-600</p>
             <p>Email: info@abadon.com</p>
           </div>
-
+  
           <div class="footer-social">
             <h4>Join in social networks.</h4>
             <p>We bring the years, experience & stamina to guide our clients.</p>
@@ -274,7 +267,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="container copyright d-flex justify-content-between align-items-center">
       <p>© 2024 AMTI. All Rights Reserved.</p>
       <div class="footer-links">
@@ -282,7 +275,7 @@
         <a href="#">Contact Us.</a>
       </div>
     </div>
-  </footer>
+  </footer>  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
