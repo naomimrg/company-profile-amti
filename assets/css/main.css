@@ -772,30 +772,23 @@ Call to Action Section
 ---------------------------------*/
 #cta {
   background-color: #1A1D30;
-  padding: 30px 0;
+  padding: 15px 0;
   position: relative;
   overflow: hidden;
 }
 
-#cta .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-
 #cta h2 {
   color: #A7E629;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 #cta p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.1rem;
   margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 #cta .btn {
@@ -803,6 +796,8 @@ Call to Action Section
   color: #1A1D30;
   font-weight: bold;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 #cta .btn:hover {
@@ -811,11 +806,10 @@ Call to Action Section
 }
 
 .cta-image {
-  position: absolute;
-  right: 50px; 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta-image img {
@@ -824,26 +818,14 @@ Call to Action Section
   object-fit: contain;
 }
 
-#cta .col-lg-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-}
-
 @media (max-width: 991px) {
   #cta .row {
-    text-align: center;
     flex-direction: column;
+    text-align: center;
   }
 
   .cta-image {
-    position: relative;
-    right: 0;
-    top: 0;
-    transform: none;
     margin-top: 20px;
-    max-width: 100%;
   }
 }
 
@@ -962,68 +944,6 @@ h2.text-center {
   font-weight: bold;
   margin-bottom: 40px;
   color: #1A1D30;
-}
-
-/* CSS khusus untuk Monitoring Section */
-.monitoring-section {
-  padding: 60px 0;
-  background-color: #f4f4f4;
-}
-
-.monitoring-image {
-  text-align: center;
-}
-
-.monitoring-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.monitoring-content {
-  padding-left: 30px;
-}
-
-.monitoring-content h3 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.monitoring-content p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.learn-more-btn {
-  font-size: 16px;
-  color: #fff;
-  background-color: #A7E629;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.learn-more-btn:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-  .monitoring-section {
-    text-align: center;
-  }
-
-  .monitoring-content {
-    padding-left: 0;
-  }
-
-  .monitoring-image {
-    margin-bottom: 30px;
-  }
 }
 
 /* .text-section */
@@ -1185,7 +1105,7 @@ FAQ
   border: none;
   height: 2px;
   width: 50px;
-  background-color: #333;
+  background-color: #A7E629;
   margin-left: 0;
 }
 
