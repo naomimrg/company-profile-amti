@@ -866,9 +866,10 @@ Why us
   padding: 15px 0;
 }
 
-.icon {
+.why-us-icon {
   width: 40px;
   height: 40px;
+  filter: brightness(0) invert(1); 
 }
 
 .why-us-item h4 {
@@ -1320,17 +1321,31 @@ EEWS Section
 
 .icon-row {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
-  background-color: #A7E629;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.icon img {
+  width: 60px; 
+  height: 60px;
+  object-fit: contain; 
+}
+
+.icon-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #333; 
+  margin-top: 8px; 
+  margin-bottom: 0; 
 }
 
 .text-outside-image p {
