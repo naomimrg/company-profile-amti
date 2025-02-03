@@ -1274,43 +1274,6 @@ EEWS Section
   line-height: 1.6;
 }
 
-.eews-section-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  max-height: 500px; 
-  height: auto; 
-}
-
-.eews-equal-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 400px; 
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-.eews-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.eews-full-page-image {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.eews-full-page-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .text-outside-image h1 {
   font-size: 2.5rem;
   font-weight: bold;

@@ -51,13 +51,14 @@
   </header>
 
   <!-- EEWS Section -->
-  <section id="eews-section" class="eews-section section"
-  style="background: #1A1D30; padding: 0; height: 90vh; overflow: hidden;">
+  <section id="eews-section" class="eews-section section" style="background: #1A1D30; padding: 0; height: 90vh; overflow: hidden;">
   <div class="container-fluid" style="height: 100%; padding: 0;">
     <div class="row align-items-center justify-content-center" style="height: 100%; margin: 0;">
       <div class="col-12" style="padding: 0; height: 100%;">
-        <img src="assets/img/eews/eews_new.png" class="img-fluid" alt="Earthquake Early Warning System"
-          style="width: 100%; height: 100%; object-fit: cover;">
+        <video class="img-fluid" autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="assets/videos/header_eews.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
@@ -66,7 +67,7 @@
   <section id="eews" class="eews-section light-background">
     <div class="container">
       <div class="eews-title-wrapper">
-        <h2>Earthquake Warning System to Save Lives, Assets, and Communities</h2>
+        <h2>Earthquake Warning System to Save Lives, Assets and Communities</h2>
         <p>By identifying P-waves, the first waves to arrive in an earthquake, our system provides crucial alerts seconds to minutes before the stronger S-waves hit. This early notification allows users to take swift actions, such as moving to a safer location or halting critical operations, ultimately saving lives and minimizing damage.</p>
       </div>
     </div>
@@ -122,18 +123,18 @@
               <div class="icon"><img src="assets/img/icon/TRANSPORTATION/ROAD SIGN ALERTS.png" alt="Road Sign Alerts Icon"></div>
               <div class="icon"><img src="assets/img/icon/TRANSPORTATION/STOP BUSES AND EVACUATE PEOPLE.png" alt="Stop Buses and Evacuate People Icon"></div>
             </div>
-            <p>AIRPORT | PORT | TRAIN | BUS</p>
+            <p>AIRPORT | TRAIN | PORT | BUS</p>
             <p class="lead mt-3">
               Earthquakes pose a serious threat to transportation systems such as airports, ports, railways, and
               vehicles, potentially disrupting operations and endangering passengers and operators. By providing early
               warnings, authorities can quickly implement safety protocols, protecting lives and critical
               infrastructure. The Earthquake Early Warning System (EEWS) from AMTI can intervene by activating automatic
-              emergency braking mechanisms for trains, redirecting air traffic, and triggering warnings on road signs to
+              emergency braking mechanisms for trains, redirecting air traffic and triggering warnings on road signs to
               prevent accidents and ensure the safety of passengers and workers.
             </p>
           </div>
           <div class="ui-image">
-            <img src="assets/img/eews/transportation.png" alt="transportation">
+            <img src="assets/img/eews/TRANSPORTATION.png" alt="transportation">
           </div>
         </div>
       </div>
@@ -176,7 +177,7 @@
       <div class="row no-gutters">
         <div class="col-12">
           <div class="text-outside-image text-center mb-4">
-            <h1 class="display-4">OIL, GAS, AND CHEMICALS</h1>
+            <h1 class="display-4">OIL, GAS AND CHEMICALS</h1>
             <div class="icon-row">
               <div class="icon"><img src="assets/img/icon/BUSINESS CONTINUITY/OIL,GAS & CHEMICALS/@Oil, Gas & Chemicals.png" alt="Oil, Gas & Chemicals Icon"></div>
               <div class="icon"><img src="assets/img/icon/BUSINESS CONTINUITY/OIL,GAS & CHEMICALS/CONTROL WATER PRESSURE IN FIRE MAINS.png" alt="Control Water Pressure Icon"></div>
@@ -215,7 +216,7 @@
               <div class="icon"><img src="assets/img/icon/BUSINESS CONTINUITY/MINES/DUCK-COVER-HOLD ON.png" alt="Duck Cover Hold On Icon"></div>
               <div class="icon"><img src="assets/img/icon/BUSINESS CONTINUITY/MINES/STOP HEAVY-MACHINERY OPERATIONS.png" alt="Stop Heavy Machinery Operations Icon"></div>
             </div>            
-            <p>TRANSPORTATION INFRASTRUCTURE | MINING EQUIPMENT</p>
+            <p>TRANSPORTATION | INFRASTRUCTURE | MINING EQUIPMENT</p>
             <p class="lead mt-3">
               Earthquakes can cause significant damage to infrastructure and jeopardize worker safety in mining
               operations. The Earthquake Early Warning System (EEWS) from AMTI can significantly reduce damage,
@@ -305,9 +306,12 @@
       });
     });
   </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      document.body.classList.add("loaded");
+      setTimeout(function () {
+        document.body.classList.add("loaded");
+      }, 5000);
     });
   </script>
 </body>
